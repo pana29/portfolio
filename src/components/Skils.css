@@ -1,0 +1,127 @@
+.skills {
+  background: var(--primary-soft);
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.skills .container-skills {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+  padding-right: 20px;
+}
+
+.skills .p1p2 {
+  width: 100%;
+}
+
+.skills .p1-skills {
+  font-size: var(--big-font-size);
+  color: var(--text-h-white);
+  font-weight: 600;
+  display: inline;
+  border-bottom: 0.3rem solid var(--text-blue);
+}
+
+.skills .p2-skills {
+  color: var(--text-gray);
+  font-size: var(--h2-font-size);
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.skills .p3-skills {
+  color: var(--text-gray);
+  font-size: var(--normal-font-size);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.skills .p3-skills-b {
+  color: var(--text-gray);
+  font-size: var(--normal-font-size);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 8px;
+}
+
+.skills #sass {
+  height: 80px;
+  width: 80px;
+}
+
+.skills .container-img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+  margin: auto;
+}
+
+.skills .icon {
+  box-shadow: 0 4px 6px -1px var(--primary-dark),
+    0 2px 4px -2px var(--primary-dark);
+  transition-duration: 500ms;
+}
+
+.skills .icon:hover {
+  transform: scale(1.1);
+}
+
+.skills .img-skills {
+  width: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.skills .img-skills-b {
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 940px) {
+  .skills {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .skills .container-skills {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .skills .p2-skills {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .skills .container-img {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .skills .icon {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills .container-img {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+}
