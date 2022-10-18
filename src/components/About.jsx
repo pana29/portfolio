@@ -15,10 +15,15 @@ const About = () => {
               </div>
             </div>
             <div className="a-right">
-              <h1 className="a-title">About</h1>
-              <p className="a-sub">
-                Hi. I'm Razvan, nice to meet you. Please take a look around.
-              </p>
+              <div className="div-for-pad">
+                <img src={me1} alt="" id="img-me-me" className="a-img-t" />
+                <div className="left-pad">
+                  <h1 className="a-title">About</h1>
+                  <p className="a-sub">
+                    Hi. I'm Razvan, nice to meet you. Please take a look around.
+                  </p>
+                </div>
+              </div>
               <p className="a-desc">
                 I would describe myself as a person who thrives at the chance of
                 learning new skills through hard work. I am a very organized
